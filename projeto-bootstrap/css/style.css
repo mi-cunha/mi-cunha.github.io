@@ -1,0 +1,562 @@
+/* geral */
+body {
+  font-family: "Urbanist", sans-serif;
+}
+
+.row {
+  margin: 0;
+}
+.container {
+  padding: 70px 0;
+}
+p,
+li {
+  color: #9f4e4e;
+  font-size: 14px;
+}
+
+/* barra de navegação */
+
+header,
+.navbar {
+  background-image: linear-gradient(#77f0d3, #fbf794);
+  /* height: 20vh; */
+}
+#nav-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#logo {
+  width: 150px;
+}
+.navbar-brand {
+  padding: 0;
+  color: #9f4e4e;
+}
+.navbar-brand:hover {
+  color: #9f4e4e;
+}
+#navbar-links {
+  justify-content: center;
+}
+#navbar-links a {
+  color: #9f4e4e;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#navbar-links a:hover {
+  color: #e8837a;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 1rem 0.8rem;
+}
+#pesquisa {
+  background-color: #ffaca4;
+  border: 2px solid #5bc6ad;
+}
+#pesquisa:hover {
+  background-color: #eb8585;
+}
+main{
+  background-color: #FBF794;
+}
+
+/* CARROSSEL */
+
+.container-fluid {
+  padding: 0;
+  /* coloquei para tentar acertar a posição do botão no centro */
+  /* position: relative; */
+}
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
+  height: 40%;
+  border-radius: 7%;
+}
+#mainSlider img{
+  opacity: 0.7;
+}
+#mainSlider .carousel-caption h2, 
+#mainSlider .carousel-caption p {
+  color: #439784;
+  font-family: "Gochi Hand", sans-serif;
+}
+
+#mainSlider .carousel-caption h2 {
+  font-size: 50px;
+  margin-bottom: 150px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  opacity: 80%;
+}
+.main-btn{
+  background-color: #e8837a;
+  color: #9f4e4e;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 200px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  transition: 0.5s;
+  /* position: absolute;
+  bottom: 100px; */  
+}
+.main-btn:hover {
+  text-decoration: none;
+  color: #9f4e4e;
+  background-color: #e47166;
+  border-color: #cf7070;
+}
+.carousel-indicators .active {
+  background-color: #9f4e4e;
+}
+
+/* Bloco de infos - FRETE */
+
+.infos{
+  background-color: #80AEC2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;  
+  padding: 20px;
+}
+.infos p{
+  font-weight: bold;
+  font-size: larger;
+  margin-left: 20px;
+  margin-right: 50px;
+  
+}
+.icone-info{
+  color: #FBF794;
+}
+
+/* Texto principal */
+
+.main-title{
+  font-family: Gochi Hand, sans-serif;
+  color:#012E40;
+  margin: 0 0 40px 0;
+  font-size: 40px;
+  text-align: center;
+}
+#about-us{
+  text-align: center;
+  font-weight: bold;
+}
+#about-us p{
+  font-size: large;
+
+}
+
+/* Aside promocão */
+#asidepromo{
+  height: 100%;
+  width: 100%;
+  color: #693333;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+#asidepromo a{
+  text-decoration: none;
+  color: #9f4e4e;
+  font-weight: bold;
+}
+.img-aside{
+  width: 100%;
+  z-index: -1;
+}
+#asideP{
+  position: absolute;
+  top: 120px;
+  left: 0;
+  text-align: center;
+  padding: 10px;
+}
+#asideLink{
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  text-align: center;
+  padding: 10px;
+}
+.launchs{
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+}
+.launchs img{
+  height: 400px;
+}
+/* BOTÃO VOLTAR AO TOPO */
+.icone{
+  color: #FBF794;
+}
+.botao-top{
+  position: fixed;
+  bottom: 7vh;
+  right: 4vw;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border: none;
+  background-color: #5BC6AD;
+  border-radius: 100%;
+  display: none;
+  z-index: 1;
+}
+
+/* .imagem-botao{
+  width: 20%x;
+} */
+
+
+/* Footer*/
+
+#footer {
+  text-align: center;
+  width: 100%;
+  background-image: linear-gradient(#fbf794, #77f0d3);
+}
+#social {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+#social img {
+  color: #5bc6ad;
+  margin-left: 20px;
+}
+#menu-rodape {
+  list-style-type: none;
+  display: flex;
+  padding: 20px 0;
+}
+.lista-rodape {
+  float: left;
+  display: inline;
+  width: 100%;
+  text-align: center;
+}
+.lista-rodape a {
+  display: inline;
+  text-decoration: none;
+  color: #9f4e4e;
+  font-weight: bold;
+  word-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+#copyright {
+  width: 100%;
+  text-align: center;
+}
+@media only screen and (min-width: 450px) and (max-width: 768px){
+  footer{
+    clear: both;
+    width: 100%;
+  }
+  #social{
+    width: 50%;
+    float: left;
+    text-align: left;
+  }
+  #menu-rodape{
+    width: 50%;
+    float: right;
+  }
+}
+/* @media only screen and (min-width:769px){
+  footer{
+    clear: both;
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  #social{
+    font-size: 1em;
+    width: 45%;
+    float: left;
+    text-align: center;
+  }
+  #social img{
+    width: 10%;
+  }
+  #menu-rodape{
+    width: 45%;
+    float: right;
+    margin-right: 1%;
+    text-align: center;
+
+  }
+} */
+/* FOOTER FEITO COM BOOTSTRAP */
+/* .footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  } */
+
+
+/* PAGINA CONTATO - FORMULÁRIO */
+
+#apply-area{
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#apply-area .apply-box{
+  text-align: center;
+  padding: 0px 50px;
+}
+.apply-box div{
+  margin-top: 20px;
+}
+#pattern-img h4, #pattern-img p{
+  color: #9f4e4e;
+}
+#pattern-img h4{
+  margin-top: 8%;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#pattern-img p{
+  margin-bottom: 20px;
+}
+#apply-btn{
+  display: block;
+  height: auto;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  border-color: #e47166;
+  margin-bottom: 50px;
+  font-weight: 700;
+} 
+#apply-btn:hover{
+  background-color: #f3ada7;
+  border-color: #e47166;
+}
+ .btn-sucess, #pesquisa-btn2 {
+  background-color: transparent;
+  border: 3px solid #e47166;
+  color: #9f4e4e;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 180px;
+  height: auto;
+  border-radius: 30px;
+  
+}
+.btn-sucess:hover, #pesquisa-btn2:hover{
+  background-color: #f3ada7;
+  border-color: #e47166;
+  color: #9f4e4e;
+}
+#chamadaPesquisa{
+  text-transform: uppercase;
+}
+#chamadaPesquisa .row{
+  display: block;
+  text-align: center;
+}
+#chamadaPesquisa p{
+  font-weight: bold;
+  font-size: 22px;
+  width: auto;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  height: 60px;
+  line-height: 60px;
+}
+#chamadaPesquisa #pesquisa-btn{
+  color: rgb(43, 23, 9);
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 30px;
+  width: auto;
+  letter-spacing: 2px;
+  border-radius: 15px;  
+}
+#chamadaPesquisa #pesquisa-btn:hover{
+  background-color: #f85b61;
+}
+#chamadaPesquisa #pesquisa-btn a{
+  text-decoration: none;
+  color: rgb(43, 23, 9);
+}
+#pref{
+  margin-bottom: 20px;  
+}
+#checkbox{
+  margin-top: 50px;
+}
+
+/* PRODUTOS */
+.project-box{
+  margin-bottom: 30px;
+}
+#filter-btn-box{
+  margin-bottom: 50px;
+  text-align: center;
+}
+#portfolio-area .filter-btn{
+  color: #9F4E4E;
+  border: 1px solid #9F4E4E;
+  background-color: transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 15px;
+  min-width: 100px;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+}
+#portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover{
+  background-color: #E8837A;
+  border-color: #D9D8D7;
+  color: #D9D8D7;
+}
+.project-box:hover{
+  transform: scale(1.1);
+  box-shadow: #012E40;
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+/* QUEM SOMOS */
+
+.aboutUs-topo{
+  background-image: url(../img/background2.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+.lead{
+  font-weight: bold;
+}
+.aboutUs-contato{
+  margin: 70px;
+}
+.tituloContato{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+iframe{
+  height: 400px;
+  width: 400px;
+}
+.contato{  
+  font-size: large;
+}
+.contato2{
+  font-weight: bold;
+  font-size: large;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width:768px){
+  .container{
+    padding: 20px 0;
+  }
+
+  #mainSlider .carousel-inner, #mainSlider .carousel-item{
+    height: auto;
+  }
+  carousel-caption{
+    left: 10%;
+    right: 10%;
+  }
+  about-area{
+    margin-top: 100px;
+  }
+}
+
+@media(max-width: 425px){
+  #mainSlider{
+    margin-top: 90px;
+  }
+  mainSlider .carousel-caption{
+    top: 5%;
+  }
+  mainSlider .carousel-caption h2{
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .carousel-caption .main-btn{
+    font-size: 14px;
+  }
+
+  main-title{
+    font-size: 30px
+  }
+
+
+
+}

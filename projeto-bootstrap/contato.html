@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montessori Magic Decor</title>
+    <link rel="shortcut icon" href="img/logo-aum-removebg-preview.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="libs/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <a href="index.html" class="navbar-brand justify-content-md-start">
+                    <img src="img/MONTESSORI-removebg-inline_adobespark.png" class="d-inline-block" id="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <ul class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.html" id="home-menu">Home</a>
+                        <a class="nav-item nav-link" href="quem-somos.html" id="quemsomos-menu">Sobre nós</a>
+                        <a class="nav-item nav-link" href="produtos.html" id="produtos-menu">Móveis</a>
+                        <a class="nav-item nav-link" href="contato.html" id="contato-menu">Contato</a>
+                </div>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Estou procurando..."
+                        aria-label="Pesquisar" id="pesquisa">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i
+                            class="fas fa-search"></i></button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <h3 class="main-title" id="titulo">Contato</h3>
+
+        <div id="apply-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 apply-box">
+                        <h4>Quer fazer um orçamento?</h4>
+                        <button type="button" class="btn btn-sucess btn-lg mt-2 ml-2" data-toggle="modal"
+                            data-target="#modalOrcamento">Clique aqui</button>
+                    </div>
+
+                    <div class="col-6 apply-box">
+                        <h4>Para falar com a gente pelo whatsapp:</h4>
+                        <button type="button" class="btn btn-sucess btn-lg mt-2 ml-2">Clique aqui</button>
+
+                        <!-- <a href="#" class="main-btn" id="apply-btn" target="_blank">Clique aqui!</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Orçamento -->
+
+        <div id="modalOrcamento" class="modal fade" tabindex="-1" role="dialog"
+            aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Faça seu orçamento</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group" id="ancora">
+                                <label for="nome">Nome</label>
+                                <input class="form-control" type="text" name="nome" class="nome" placeholder="Nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input class="form-control" type="email" name="email" id="email" onblur="valida_email(this)"
+                                    placeholder="seuemail@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="tel">Celular (whatsapp)</label>
+                                <input class="form-control" type="tel" name="tel" id="tel"
+                                    placeholder="(00) 00000-0000)">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="estado">Estado</label>
+                                <select class="form-control" name="estado" id="estado">
+                                    <option value="selecione">Selecione</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
+
+                            <h6>Qual a faixa etária?</h6>
+                            <div class="form-check-inline" id="pref">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios1" value="opcao1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        0 - 12 meses
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios2" value="opcao2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        1 a 3 anos
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios3" value="option3">
+                                    <label class="form-check-label" for="exampleRadios3">
+                                        3 a 5 anos
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios3" value="option3">
+                                    <label class="form-check-label" for="exampleRadios3">
+                                        A partir de 5 anos
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Mensagem</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Descreva aqui seus interesses que em breve entraremos em contato."></textarea>
+                            </div>
+
+                            <div class="form-check" id="checkbox">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Selecione se aceita nossos <a href="#">termos de uso</a>.
+                                </label>
+                            </div>
+
+                            <div class="alert alert-danger d-none">
+                                Preencha os campos corretamente!
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Enviar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <section id="form">
+            <section class="container">
+                <form>
+                    <div class="form-group" id="ancora">
+                        <label for="nome">Nome</label>
+                        <input class="form-control nome" type="text" name="nome" placeholder="Nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input class="form-control" type="email" name="email" id="email" onblur="valida_email(this)"
+                            placeholder="seuemail@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone (whatsapp)</label>
+                        <input class="form-control tel" type="tel" name="tel" placeholder="(00) 00000-0000)">
+                    </div>
+                    <div class="form-group">
+                        <label for="estado">Estado</label>
+                        <select class="form-control" name="estado" id="estado">
+                            <option value="selecione">Selecione</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="nota">Assunto</label>
+                        <select class="form-control" name="assunto" id="assunto">
+                            <option value="selecione">Selecione</option>
+                            <option value="0">Trabalhe Conosco</option>
+                            <option value="1">Elogios</option>
+                            <option value="2">Sugestões</option>
+                            <option value="3">Reclamações / Ouvidoria</option>
+                            <option value="4">Dúvidas</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Mensagem</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Descreva aqui o assunto e logo retornaremos seu contato"></textarea>
+                    </div>
+
+                    <div class="form-check" id="checkbox">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Selecione se aceita nossos <a href="#">termos de uso</a>.
+                        </label>
+                    </div>
+
+                    <div class="form-group text-center">
+                        <button id="pesquisa-btn2" type="button">Enviar</button>
+                    </div>
+
+                    <div class="alert alert-danger d-none">
+                        Preencha os campos corretamente!
+                    </div>
+                </form>
+
+            </section>
+        </section>
+
+
+
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div id="social">
+                <a href="#"><img src="icones/icons8-facebook-num-círculo-32.png" alt="logo facebook"></i></a>
+                <a href="#"><img src="icones/icons8-instagram-32.png" alt="logo instagram"></i></a>
+                <a href="#"><img src="icones/icons8-pinterest-32.png" alt="logo pinterest"></i></a>
+                <a href="#"><img src="icones/icons8-whatsapp-32.png" alt="logo whatsapp"></i></a>
+            </div>
+
+            <ul id="menu-rodape">
+                <li class="lista-rodape"><a href="index.html">Home</a></li>
+                <li class="lista-rodape"><a href="quem-somos.html">Quem Somos</a></li>
+                <li class="lista-rodape"><a href="produtos.html">Produtos</a></li>
+                <li class="lista-rodape"><a href="contato.html">Contato</a></li>
+            </ul>
+            <p id="copyright">Montessori Magic Decor © 2021</p>
+        </div>
+    </footer>
+
+    <!-- FOOTER FEITO COM BOOTSTRAP -->
+    <!-- <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a> 
+                <a href="#"><i class="fab fa-facebook"></i></a>               
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Quem Somos</a></li>
+                <li class="list-inline-item"><a href="#">Produtos</a></li>
+                <li class="list-inline-item"><a href="#">Contato</a></li>
+            </ul>
+            <p class="copyright">Montessori Magic Decor © 2021</p>
+    
+        </footer>
+    </div> -->
+
+
+
+
+
+    <script src="libs/jquery-3.6.0.min.js"></script>
+    <script src="libs/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/2e5dad3f38.js" crossorigin="anonymous"></script>
+    <script src="libs/parallax.js-1.5.0/parallax.min.js"></script>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
